@@ -48,9 +48,10 @@ jobs:
 
       - name: Build debug APK
         run: |
-          # secrets-gradle-plugin requires local.properties to exist even though
-          # the actual MAPS_API_KEY value comes from local.defaults.properties.
-          touch local.properties
+          # No real Google Maps API key is available in CI; write a placeholder
+          # so the manifest placeholder resolves and the build succeeds. Maps
+          # tiles just won't load in this build; tracking itself still works.
+          echo "MAPS_API_KEY=DUMMY_MAPS_API_KEY" > local.properties
           chmod +x gradlew
           ./gradlew assembleDebug
 
