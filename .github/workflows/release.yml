@@ -48,6 +48,9 @@ jobs:
 
       - name: Build debug APK
         run: |
+          # secrets-gradle-plugin requires local.properties to exist even though
+          # the actual MAPS_API_KEY value comes from local.defaults.properties.
+          touch local.properties
           chmod +x gradlew
           ./gradlew assembleDebug
 
