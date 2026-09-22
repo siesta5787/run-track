@@ -1,9 +1,10 @@
 # RunTrack
 
-> This is a personal copy of [sDevPrem/run-track](https://github.com/sDevPrem/run-track),
-> imported as a fresh code snapshot (no upstream commit history). All credit for the
-> original design and implementation goes to [sDevPrem](https://github.com/sDevPrem).
-> See [ATTRIBUTION.md](ATTRIBUTION.md) for details.
+> This is a copy of [sDevPrem/run-track](https://github.com/sDevPrem/run-track),
+> imported as a fresh code snapshot (no upstream commit history), licensed under the
+> [Apache License 2.0](LICENSE). All credit for the original design and implementation
+> goes to [sDevPrem](https://github.com/sDevPrem). See [ATTRIBUTION.md](ATTRIBUTION.md)
+> for details.
 
 RunTrack is a Fitness Tracking app utilizing modern Android technologies, including
 Jetpack Compose, MVVM architecture, and Google Maps API. The app allows users to
